@@ -35,7 +35,7 @@ export default function index() {
 				"password": password2
 			})
 		}
-		fetch('http://localhost:4000/api/users', options)
+		fetch(`${AppHelper.API_URL}/api/users`, options)
 			.then(res => {
 				return res.json()
 			})
