@@ -69,7 +69,7 @@ export default function Transactions({ data }) {
         <h6 className="justify-content-canter text-center">Total Balance: {balance}.00</h6>
         <h6 className="justify-content-canter text-center">Total Expenses: {expense}.00 ({expensep}%)</h6>
         <h6 className="justify-content-canter text-center">Total income: {income}.00 ({incomep}%)</h6>
-        <DoughnutChart expense={income} income={expense}/>
+        {/* <DoughnutChart expense={income} income={expense}/> */}
         </Container>
         <Container/>
       </React.Fragment> 
