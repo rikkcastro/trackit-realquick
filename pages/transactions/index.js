@@ -112,7 +112,7 @@ export default function Transactions() {
 				return res.json()
 			})
 			.then(data => {
-                
+                  console.log(data)
                     Swal.fire('New record', 'You are have added a transaction', 'success')
                     fetch(`${AppHelper.API_URL}/users/transact`, {
                       method: 'POST',
@@ -121,7 +121,7 @@ export default function Transactions() {
                       },
                       body: JSON.stringify({
                         "userId": getuserid,
-                        "transactionid": data._id,
+                        "transactionId": data._id,
                         "description": data.description,
                         "amount": data.amount,
                         "transactionType": data.transactionType,

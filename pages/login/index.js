@@ -36,7 +36,8 @@ const LoginForm = () => {
 
 		const options = {
 			method: 'POST',
-			headers: { 'Content-Type': 'application/json' },
+			headers: { 'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': '*' },
 			body: JSON.stringify({
 				email: email,
 				password: password
@@ -101,7 +102,11 @@ const LoginForm = () => {
 	const retrieveUserDetails = (accessToken) => {
 
 		const options = {
-			headers: { Authorization: `Bearer ${ accessToken }` }
+			headers: {
+				 Authorization: `Bearer ${ accessToken }`,
+				 'Content-Type': 'application/json',
+				 'Access-Control-Allow-Origin': '*'
+				 }
 		}
 		fetch(`${ AppHelper.API_URL }/users/details`, options)
 		.then(AppHelper.toJSON)
