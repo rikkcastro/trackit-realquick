@@ -149,7 +149,7 @@ const LoginForm = () => {
 						
 		            	onSuccess={ authenticateGoogleToken }
 		            	onFailure={ authenticateGoogleToken }
-		            	cookiepolicy={ 'single_host_origin' }
+		            	cookiesPolicy={ 'single_host_origin' }
 		            	className="w-100 text-center d-flex justify-content-center"
 		            />
 
