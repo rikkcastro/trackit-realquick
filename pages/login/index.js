@@ -143,7 +143,7 @@ const LoginForm = () => {
 		            <Button variant="success" type="submit" block>Login</Button>
 
 		            <GoogleLogin 
-		            	clientId="958929094439-5i9scb38g3kv33ae9p2jjlka6gle4nk7.apps.googleusercontent.com"
+		            	clientId="370755427923-knkj0uei6odr9iojv0qvsnd1n0hrkjpj.apps.googleusercontent.com"
 						buttonText="Login with Google"
 						theme = "light"
 						
