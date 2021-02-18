@@ -114,6 +114,7 @@ const LoginForm = () => {
 			localStorage.setItem('useridlocal', data._id)
 			
 			setUser({ id: data._id, isAdmin: data.isAdmin });
+			
 			Router.push('/transactions');
 			
 
@@ -125,7 +126,7 @@ const LoginForm = () => {
 	return(
 	<React.Fragment>
 			<Head>
-				<title>Authentication</title>
+				<title>TrackIT-RealQuick</title>
 			</Head>
 			<Container>
 				<Form onSubmit={e => authenticate(e)}>
