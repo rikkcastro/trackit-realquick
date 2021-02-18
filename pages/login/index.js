@@ -126,7 +126,7 @@ const LoginForm = () => {
 	return(
 	<React.Fragment>
 			<Head>
-				<title>TrackIT-RealQuick</title>
+				<title>Authentication</title>
 			</Head>
 			<Container>
 				<Form onSubmit={e => authenticate(e)}>
