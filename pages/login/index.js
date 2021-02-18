@@ -126,7 +126,7 @@ const LoginForm = () => {
 	return(
 	<React.Fragment>
 			<Head>
-				<title>Authentication</title>
+				<title>Authentications</title>
 			</Head>
 			<Container>
 				<Form onSubmit={e => authenticate(e)}>
